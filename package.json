@@ -1,11 +1,13 @@
 {
-  "name": "1",
+  "name": "hot-cold-enzyme",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-	"eslint_versions": "npm info eslint-config-airbnb@latest peerDependencies",
-    "USELESS": "nothing"
+    "start": "cd server && node server.js",
+		"test": "cd server && npm install && LOG_LEVEL=info mocha ./test --exit",
+		"heroku-postbuild": "cd server && npm install && cd ../client && npm install --only=dev && npm install && npm run prod"
+
   },
   "keywords": [],
   "author": "",
