@@ -25,6 +25,7 @@
 		"help": "webpack --help",
 		"build": "webpack -p",
 		"prod": "NODE_ENV=production npm run build",
+		"heroku-postbuild": "npm install --only=dev && npm install && npm run prod",
 		"eslint_versions": "npm info eslint-config-airbnb@latest peerDependencies"
 	},
 	"keywords": [],
