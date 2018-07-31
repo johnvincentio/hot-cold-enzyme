@@ -96,7 +96,7 @@ const config = {
 		extensions: ['.js', '.jsx']
 	},
 	plugins: [
-		new webpack.EnvironmentPlugin(['NODE_ENV', 'API_KEY']),
+		new webpack.EnvironmentPlugin(['NODE_ENV']),
 		extractSCSSBundle,
 		new CopyWebpackPlugin([{ from: 'index.html', to: '.' }], { debug: 'info' }),
 		// new CopyWebpackPlugin([{ from: 'src/assets/images', to: 'images' }], { debug: 'info' }),
